@@ -8,7 +8,7 @@ const formReducer = (state, event) => {
 };
 export default function Form() {
   const [formData, setFormData] = useReducer(formReducer, {});
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
