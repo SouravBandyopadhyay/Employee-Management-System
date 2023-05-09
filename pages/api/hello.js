@@ -1,7 +1,6 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import connectMongo from '../../database/connect';
 
 export default (req, res) => {
-  // Open Chrome DevTools to step through the debugger!
-  // debugger;
+  connectMongo();
   res.status(200).json({ name: 'Hello, world!' });
 };
