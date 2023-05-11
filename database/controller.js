@@ -10,4 +10,5 @@ export async function getUsers(req, res) {
   } catch (error) {
     res.status(404).json({ error: 'Error while fetching the data' });
   }
+  res.send('Response Sent');
 }
